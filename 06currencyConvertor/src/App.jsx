@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { InputBox } from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
-
+import { MdOutlineSwapCalls } from "react-icons/md";
 
 function App() {
 
@@ -29,11 +29,11 @@ function App() {
     <div
         className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
         style={{
-            backgroundImage: `url('https://t3.ftcdn.net/jpg/02/74/91/02/360_F_274910292_Xm3dgmmfMJVFrcjUR1eqJmIC7giRrsTF.jpg')`,
+            backgroundImage: `url('https://img.freepik.com/free-vector/global-business-background-with-stock-chart-blue-tone_53876-119546.jpg?w=1380&t=st=1723714536~exp=1723715136~hmac=10079e5e3cea42dc8150dddf005e5b63a078aa59a94d886e94093cb7b4930ee0')`,
         }}
     >
         <div className="w-full">
-            <div className="w-full max-w-xl mx-auto h-96 border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+            <div className="w-full max-w-3xl mx-auto h-fit border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
                 <form
                     onSubmit={(e) => {
                         e.preventDefault();
@@ -55,11 +55,11 @@ function App() {
                     <div className="relative w-full h-0.5">
                         <button
                             type="button"
-                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5 h-12 w-20"
+                            className="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 border-2 border-white rounded-md bg-blue-600 text-white px-2 py-0.5 h-16 w-24"
                             onClick={swap}
                             
                         >
-                            swap
+                            Swap
                         </button>
                     </div>
                     <div className="w-full mt-1 mb-4">
